@@ -1,0 +1,15 @@
+.main-footer {
+    // box model
+    padding: 5px 20px;
+    border-top: 5px solid $lightBlue;
+    // visual
+    background-color: $darkBlue;
+}
+
+.copyrights {
+    // visual
+    color: $white;
+    font-family: $mainFont;
+    font-weight: 300;
+    font-size: 14px;
+}

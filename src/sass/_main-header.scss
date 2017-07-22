@@ -1,0 +1,73 @@
+.main-header {
+    // box model
+    padding: 20px;
+
+    // visual
+    background-color: $darkBlue;
+}
+
+.logo {
+    // box model
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 15px;
+    height: 64px;
+    width: 64px;
+    @media (min-width: $tablet) {
+        height: 100px;
+        width: 100px;
+        vertical-align: middle;
+    }
+}
+
+.header-text {
+    // box model
+    display: inline-block;
+    vertical-align: top;
+    // border: 1px solid red;
+    @media (min-width: $tablet) {
+        vertical-align: middle;
+        width: calc(100% - 140px);
+    }
+}
+
+.company-name {
+    // box model
+    padding: 0;
+    margin: 0;
+    @media (min-width: $tablet) {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    // typography
+    color: $white;
+    font-family: $mainFont;
+    font-weight: 300;
+    font-size: 24px;
+    text-transform: uppercase;
+    @media (min-width: $tablet) {
+        font-size: 30px;
+    }
+}
+
+.phone-number {
+    // box model
+    // margin-left: 80px;
+    @media (min-width: $tablet) {
+        display: inline-block;
+        vertical-align: middle;
+        padding-left: 100px;
+        padding-left: calc(100% - 405px);
+        // float: right;
+    }
+
+    // typography
+    color: $white;
+    font-family: $mainFont;
+    font-weight: 300;
+    font-size: 18px;
+    @media (min-width: $tablet) {
+        font-size: 20px;
+    }
+}

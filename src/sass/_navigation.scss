@@ -1,0 +1,54 @@
+.navigation {
+    // box model
+    padding: 20px;
+    // visual
+    background-color: $lightBlue;
+}
+
+.nav-form {}
+
+
+
+.nav-form__input {
+    // box model
+    display: inline-block;
+    vertical-align: top;
+    height: 40px;
+    width: 170px;
+    width: calc(100% - 130px);
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.nav-icon {
+    // box model
+    // border: 1px solid red;
+    display: inline-block;
+    vertical-align: top;
+    width: 70px;
+    height: 40px;
+
+    &--car {
+        background-image: url("../img/icon-car.png");
+    }
+
+    &--evac {
+        background-image: url("../img/icon-evac.png");
+    }
+}
+
+.stats {
+    // box model
+    padding-left: 95px;
+
+    // typography
+    color: $white;
+    font-family: $mainFont;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+

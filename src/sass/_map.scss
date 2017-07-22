@@ -1,0 +1,9 @@
+.map {
+    // box model
+    height: 300px;
+    background-image: url("../img/map-bg.jpg");
+    background-position: center center;
+    @media (min-width: $tablet) {
+        height: 600px;
+    }
+}

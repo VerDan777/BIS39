@@ -1,0 +1,14 @@
+@import "normalize";
+@import "vars";
+@import "container";
+
+
+@import "main-header";
+@import "navigation";
+@import "map";
+@import "main-footer";
+
+body {
+    // box model
+    margin: 0 auto;
+}
