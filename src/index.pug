@@ -27,6 +27,8 @@ html(lang='en')
           .stats__distance Расстояние: 43км
           // .stats__distance
           .stats__value Стоимость: 1200 руб.
+          input(type='button' onclick="GetRoute()")
+          #sumdistance
           // .stats__value
         // .stats
       // .container
@@ -42,4 +44,3 @@ html(lang='en')
     
     script(src='script.js')
     script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGJe_ypWWDbDLR8866Q9D1IBVDKN9qH7o&libraries=places&callback=initMap")
-    //- script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCGJe_ypWWDbDLR8866Q9D1IBVDKN9qH7o&callback=initMap', async='', defer='')
