@@ -13,46 +13,36 @@
           <h1 class="company-name">БИС Эвакуатор</h1>
           <div class="phone-number">+7(911) 455-47-96</div>
         </div>
-        <!-- .header-text-->
       </div>
     </header>
     <div class="navigation">
       <div class="container">
         <form class="nav-form" action="">
-          <div class="nav-item">
-            <div class="nav-icon nav-icon--car"></div>
-            <input class="nav-form__input" id="evac-from-input" type="text" placeholder="Откуда эвакуировать">
-          </div>
-          <div class="nav-item">
-            <div class="nav-icon nav-icon--evac"></div>
-            <input class="nav-form__input" id="evac-to-input" type="text" placeholder="Куда эвакуировать">
-          </div>
+          <div class="nav-item"></div>
         </form>
-        <!-- .navigation-form-->
-        <div class="stats">
+        <div class="stats"></div>
+        <select id="start">
+          <option value="chicago,il">Chicago</option>
+          <option value="st louis, mo">St Louis</option>
+        </select>
+        <select id="end">
+          <option value="joplin, mo">Joplin</option>
+          <option value="amarillo,tx">Amarillo</option>
           <div class="stats__distance">Расстояние: 43км</div>
-          <!-- .stats__distance-->
           <div class="stats__value">Стоимость: 1200 руб.</div>
-          <input type="button" onclick="GetRoute()">
-          <div id="sumdistance"></div>
-          <!-- .stats__value-->
-        </div>
-        <!-- .stats-->
+          <input type="button" id="button" onclick="initMap()" value="Get Route">
+        </select>
       </div>
-      <!-- .container-->
     </div>
-    <!-- .navigation-->
+    <div id="dvDistance"></div>
     <div class="map"></div>
-    <!-- .map 12-->
+    <div id="dvPanel"></div>
     <footer class="main-footer">
       <div class="container">
         <div class="copyrights">© БИС Эвакуатор 2016</div>
-        <!-- .copyrights-->
       </div>
-      <!-- .container-->
     </footer>
-    <!-- .main-footer-->
     <script src="script.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGJe_ypWWDbDLR8866Q9D1IBVDKN9qH7o&amp;libraries=places&amp;callback=initMap"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCctzeYyaKtLr-MfxITYRgiFfBPMvNE4Sw&amp;callback=initMap"></script>
   </body>
 </html>
