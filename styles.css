@@ -448,7 +448,7 @@ th {
   line-height: 1.6; }
 
 .map {
-  height: 300px;
+  height: 600px;
   background-image: url("../img/map-bg.jpg");
   background-position: center center; }
   @media (min-width: 768px) {
