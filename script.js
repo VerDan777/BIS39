@@ -68,8 +68,8 @@
         };
         var button = document.getElementById('button');
         button.addEventListener('click',onChangeHandler);
-        // document.getElementById('start').addEventListener('change', onChangeHandler);
-        // document.getElementById('end').addEventListener('change', onChangeHandler);
+        document.getElementById('start').addEventListener('change', onChangeHandler);
+        document.getElementById('end').addEventListener('change', onChangeHandler);
       }
 
       function calculateAndDisplayRoute(directionsService, directionsDisplay) {
