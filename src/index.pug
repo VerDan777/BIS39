@@ -16,29 +16,28 @@ html(lang='en')
       .container
         form.nav-form(action='')
           .nav-item
-          //-   .nav-icon.nav-icon--car
-          //-   input#evac-from-input.nav-form__input(type='text', placeholder='Откуда эвакуировать')
-          //- .nav-item
+            .nav-icon.nav-icon--car
+            input#evac-from-input.nav-form__input(type='text', placeholder='Откуда эвакуировать')
+          .nav-item
             .nav-icon.nav-icon--evac
             input#evac-to-input.nav-form__input(type='text', placeholder='Куда эвакуировать')
         .stats
-        select#start
-          option(value="chicago,il") Chicago
-          option(value="st louis, mo") St Louis
-        select#end
-          option(value="joplin, mo") Joplin
-          option(value="amarillo,tx") Amarillo
-          .stats__distance Расстояние: 43км
-          .stats__value Стоимость: 1200 руб.
-          input(type="button" id="button" onclick="initMap()" value="Get Route")
+        //- input#input-from(type="text" placeholder="Введите точку отправления" size="50")
+        //- input#input-to(type="text" placeholder="Введите точку назначения" size="50")
+        .stats__distance Расстояние:
+          .stats__distance-km 
+        .stats__value Стоимость:
+          .stats__value-price
+        input#button.button(type="button" value="Рассчитать")
     #dvDistance
+    #right-panel
     .map
     #dvPanel
     footer.main-footer
       .container
-        .copyrights © БИС Эвакуатор 2016
+        .copyrights © БИС Эвакуатор 2017
  
 
     script(src='script.js')
-    script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCctzeYyaKtLr-MfxITYRgiFfBPMvNE4Sw&callback=initMap")
+    script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCctzeYyaKtLr-MfxITYRgiFfBPMvNE4Sw&libraries=places&callback=initMap")
 

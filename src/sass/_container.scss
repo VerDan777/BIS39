@@ -1,6 +1,8 @@
 .container {
     // box model
     margin: 0 auto;
+    text-align: center;
+    
     // max-width: $mobile;
     @media (min-width: $tablet) {
         max-width: $tablet;

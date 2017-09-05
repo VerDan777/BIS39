@@ -1,0 +1,27 @@
+.stats {
+    color: white;
+    font-weight: bold;
+    font-family: 'Roboto',sans-serif;
+
+    &__distance {
+    color: white;
+    // font-weight: bold;
+    font-family: 'Roboto',sans-serif;
+    display:inline-block;
+    padding-right: 100px;
+    }
+    &__distance-km {
+        display: inline-block;
+    }
+    &__value {
+    color: white;
+    // font-weight: bold;
+    font-family: 'Roboto',sans-serif;
+    display:inline-block;
+    
+    }
+    &__value-price {
+        display: inline-block;
+    }
+
+}
